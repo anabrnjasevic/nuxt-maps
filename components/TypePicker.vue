@@ -12,11 +12,10 @@
 </template>
 
 <script setup>
- import { onMounted } from "vue";
  import {  Select, initTE } from "tw-elements";
-
-  onMounted(() => {
-    initTE({  Select });
+ 
+ onMounted(async() => {
+    initTE({ Select },{ allowReinits: true });
   });
 
   const type = useType('type')

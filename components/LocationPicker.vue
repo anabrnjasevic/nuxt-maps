@@ -25,13 +25,12 @@
 </template>
 
 <script setup>
-  import { onMounted } from "vue";
-  const { Input, initTE} = await import("tw-elements")
+const { Input, initTE} = await import("tw-elements")
 
 
 
-  onMounted(() => {
-    initTE({ Input });
+  onMounted(async() => {
+    initTE({ Input },{ allowReinits: true });
   });
 const location = useLocation('location');
 

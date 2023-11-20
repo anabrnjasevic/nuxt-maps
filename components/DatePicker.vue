@@ -18,20 +18,16 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
-import {
-  Datepicker,
-  Input,
-  initTE,
-} from "tw-elements";
+const { Input, initTE,  Datepicker} = await import("tw-elements");
 
-onMounted(() => {
-    initTE({ Datepicker, Input });
-    const datepickerDisablePast = document.getElementById('datepicker-disable-past');
+onMounted(async() => {
+ 
+ initTE({ Datepicker, Input },{ allowReinits: true });
+ const datepickerDisablePast = document.getElementById('datepicker-disable-past');
 new Datepicker(datepickerDisablePast, {
-  disablePast: true
+disablePast: true
 });
-  });
+});
 
   const date = useDate('date');
 

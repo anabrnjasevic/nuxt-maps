@@ -4,7 +4,7 @@
     data-te-animation-start="onLoad"
     data-te-animation-reset="true"
     data-te-animation="[slide-in-right_1s_ease-in-out]"
-    class="max-w-md fixed left-0 top-12 z-[1055]">
+    class="max-w-md fixed left-0 top-15 z-[1055]">
 
    <div @click.stop
      class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -34,6 +34,7 @@
   Animate,
   initTE,
 } from "tw-elements";
+
 
 onMounted(()=>{
   initTE({ Animate });

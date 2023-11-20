@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed right-12 top-12 z-[1055]">  
+    <div class="fixed right-12 top-15 z-[1055]">  
       <div data-te-animation-init
         data-te-animation-start="manually"
         data-te-animation-reset="true"
